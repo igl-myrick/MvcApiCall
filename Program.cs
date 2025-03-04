@@ -14,7 +14,8 @@ namespace MvcApiCall
       WebApplication app = builder.Build();
 
       // app.UseDeveloperExceptionPage();
-    //   app.UseHttpsRedirection();
+      app.UseStaticFiles();
+      app.UseHttpsRedirection();
 
       app.UseRouting();
 
